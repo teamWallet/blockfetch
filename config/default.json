@@ -1,0 +1,65 @@
+{
+  "chain": {
+    "fillClusterSize": 4,
+    "clusterSize": 10,
+  
+    "amq": {
+      "connectionString": "amqp://guest:guest@127.0.0.1/"
+    },
+    "start_block_num": 1,
+    "dfuse_api_key": "",
+    "network": "",
+    "dfuse": false,
+    "eos": {
+      "contracts": [
+        "daccustodian",
+        "dacauthority",
+        "dactreasurys",
+        "dacdactokens",
+        "dacmultisigs",
+        "dex4everyone",
+        "eosio.msig",
+        "dacdividends",
+        "dacdirectory",
+        "eosio.token",
+        "dividendpool",
+        "dac4dividend",
+        "dacproposals",
+        "dacdacescrow"
+      ],
+      "chainId": "7cb1464382c09f6687bff38a837aaf5e57fb960ca3988662c2b9941542ad4ccf",
+  
+      "endpoint": "http://127.0.0.1:18890",
+      "wsEndpoint": "http://127.0.0.1:18089",
+  
+      "authContract": "dacauthority",
+      "msigContract": "eosio.msig",
+      "custodianContract": "daccustodian",
+      "dacMsigContract": "dacmultisigs",
+      "proposalsContract": "moxuedacprop",
+      "tokenContract": "dacdactokens",
+      "authorityCode": "dacauthority",
+      "profileContract": "accntprofile",
+      "logrecordContract": "daclogrecord",
+      "dacexchangeContract": "dex4everyone",
+      "dacGenesisBlock": 0, 
+      "dacDirectoryContract": "dacdirectory",
+      "legacyDacs": ["fxomzhrmdac"],
+      "dacDirectoryMode": "all",
+      "dacDirectoryDacId": ""
+    }
+  },
+  "app": {
+    "logger": {
+      "level": "debug",
+      "path": "./../log/"
+    }
+  },
+  "db": {
+    "host": "pgm-bp1w1nb1571qlmklwo.pg.rds.aliyuncs.com",
+    "port": 1921,
+    "username": "utu_test",
+    "password": "TeV43izPGt",
+    "database": "postgres"
+  }
+}
